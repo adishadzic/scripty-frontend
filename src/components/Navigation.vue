@@ -1,18 +1,26 @@
 <template>
-<div class="navigation">
-</div>
+  <div class="sidebar">
+    <SidebarRow title="Home" />
+    <SidebarRow title="Spremljeno" />
+    <SidebarRow title="Poruke" />
+  </div>
 </template>
 
 <style>
-    .navigation{
-        background-color:#202020;
-        width: 15%;
-        height: 100vh;
-    }
+.sidebar {
+  background-color: #202020;
+  width: 15%;
+  height: 100vh;
+}
 </style>
 
 <script>
-export default{
-    name: "Navigation"
+import SidebarRow from "./SidebarRow";
+
+export default {
+  name: "Navigation",
+  components: {
+    SidebarRow,
+  },
 };
 </script>

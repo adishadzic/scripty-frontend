@@ -1,63 +1,84 @@
 <template>
-    <div class="header">
-        <div class="logo">
-            <img src="../assets/scripty-logo.png">
-        </div>
-
-        <div class="search">
-            <input class="input" type="text" placeholder="Search..">
-        </div>
-
-        <div class="icons">
-            <img src="../assets/Navigation/add-icon.svg">
-            <img src="../assets/Navigation/bell-icon.svg">
-            <img src="../assets/Navigation/avatar-icon.svg">
-            <img src="../assets/Navigation/triangle-icon.svg">
-        </div>
-
+  <div class="header">
+    <div class="header__left">
+      <img class="header__logo" src="../assets/scripty-logo.svg" />
     </div>
+
+    <div class="header__input">
+      <input type="text" placeholder="Search.." />
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </div>
+
+    <div class="header__icons">
+      <img class="header__icon" src="../assets/Navigation/plus-icon.svg" />
+      <img class="header__icon" src="../assets/Navigation/bell-icon.svg" />
+      <img class="header__icon" src="../assets/Navigation/avatar-icon.svg" />
+      <img
+        class="header__icon-last"
+        src="../assets/Navigation/triangle-icon.svg"
+      />
+    </div>
+  </div>
 </template>
 
 <style>
-*{
-    margin: 0;
+.header {
+  background-color: #202020;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  padding-right: 20px;
+  padding-left: 20px;
+  top: 0;
 }
-.header{
-    background-color:#202020;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.header__logo {
+  height: 90px;
+  margin-left: 20px;
 }
-.logo{
-    max-height: 70%;
-    vertical-align: middle;
-    background-color:#212121;
+.header__input {
+  display: flex;
+  align-items: center;
+  width: 35%;
+  border: 1px solid darkgray;
 }
-.search{
-    color: white;
-    width: 20%;
-    display: flex;
-    justify-content: center;
+.header__input input {
+  width: 100%;
+  background-color: #181818;
+  padding: 13px;
+  border: 0;
+  color: white;
+}
+.header__input button {
+  float: left;
+  width: 20%;
+  padding: 13px;
+  background: gray;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
 
+.header__icons {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
-.input{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: #181818;
+
+.header__icon {
+  margin-left: 15px;
+  height: 3vh;
 }
-.icons{
-    
-}
-.icons img{
-   width: 20%;
-   margin: 2px;
+
+.header__icon-last {
+  margin-left: 6px;
 }
 </style>
 
 <script>
-export default{
-    name:"Header"
+export default {
+  name: "Header",
 };
 </script>
