@@ -1,12 +1,20 @@
 <template>
     <div class="App">
         <Header/>
+        <Navigation/>
     </div>
 </template>
 
-<script>
-import Header from "@/components/Header.vue"
-export default{
-    components:{Header}
+<style scoped>
+.App{
+    background-color: #181818;
 }
+</style>
+
+<script>
+import Header from "./components/Header";
+import Navigation from "./components/Navigation"
+export default{
+    components:{Header, Navigation}
+};
 </script>
