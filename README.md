@@ -1,5 +1,19 @@
-Frontend dio web aplikacije Scripty 
+# scripty-frontend
 
-Kolegij: Web aplikacije
+## Project setup
+```
+npm install
+```
 
-Mentori: doc.dr.sc. Nikola Tanković i Nikki Bernobić, univ.bacc. inf.
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
