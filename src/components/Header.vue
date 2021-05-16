@@ -1,7 +1,11 @@
 <template>
   <div class="header">
     <div class="header__left">
-      <img class="header__logo" src="../assets/scripty-logo.svg" />
+      <img
+        src="../assets/logo.svg"
+        height="35vh"
+        style="margin-right: 5px"
+      />Scripty
     </div>
 
     <div class="header__input">
@@ -22,6 +26,8 @@
 </template>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap");
+
 .header {
   background-color: #202020;
   display: flex;
@@ -32,9 +38,14 @@
   padding-left: 20px;
   top: 0;
 }
-.header__logo {
-  height: 90px;
-  margin-left: 20px;
+.header__left {
+  padding: 1%;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-family: "Source Code Pro", monospace;
+  color: rgb(231, 92, 92);
 }
 .header__input {
   display: flex;
@@ -45,20 +56,25 @@
 .header__input input {
   width: 100%;
   background-color: #181818;
-  padding: 13px;
+  padding: 8px;
   border: 0;
   color: white;
 }
 .header__input button {
   float: left;
   width: 20%;
-  padding: 13px;
+  padding: 5px;
   background: gray;
   color: white;
   font-size: 17px;
   border: 1px solid grey;
   border-left: none;
   cursor: pointer;
+}
+
+.header__input button:hover {
+  background: lightgray;
+  color: gray;
 }
 
 .header__icons {
@@ -69,11 +85,12 @@
 
 .header__icon {
   margin-left: 15px;
-  height: 3vh;
+  height: 25px;
 }
 
 .header__icon-last {
   margin-left: 6px;
+  height: 7px;
 }
 </style>
 
