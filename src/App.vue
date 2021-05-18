@@ -1,7 +1,9 @@
 <template>
   <div class="app">
     <Header />
-    <Navigation />
+    <Sidebar />
+
+    <router-view />
   </div>
 </template>
 
@@ -9,15 +11,12 @@
 * {
   margin: 0;
 }
-.app {
-  background-color: #181818;
-}
 </style>
 
 <script>
+import Sidebar from "./components/Sidebar.vue";
 import Header from "./components/Header";
-import Navigation from "./components/Navigation";
 export default {
-  components: { Header, Navigation },
+  components: { Header, Sidebar },
 };
 </script>
