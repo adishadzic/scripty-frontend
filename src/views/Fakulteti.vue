@@ -28,24 +28,34 @@ export default {
     return {
       fakulteti: [
         {
-          image: require("../assets/folder.svg"),
-          fakultetName: "Statistika",
+          image: require("../assets/college.svg"),
+          fakultetName: "Fakultet Informatike u Puli",
+          uni: "Sveučilište Jurja Dobrile u Puli",
         },
         {
-          image: require("../assets/folder.svg"),
-          fakultetName: "Osnove IKT-a..",
+          image: require("../assets/college.svg"),
+          fakultetName: "Fakultet Informatike u Puli",
+          uni: "Sveučilište Jurja Dobrile u Puli",
         },
         {
-          image: require("../assets/folder.svg"),
-          fakultetName: "Web Aplikacije",
+          image: require("../assets/college.svg"),
+          fakultetName: "Fakultet Informatike u Puli",
+          uni: "Sveučilište Jurja Dobrile u Puli",
         },
         {
-          image: require("../assets/folder.svg"),
-          fakultetName: "Ekonomija",
+          image: require("../assets/college.svg"),
+          fakultetName: "Fakultet Informatike u Puli",
+          uni: "Sveučilište Jurja Dobrile u Puli",
         },
         {
-          image: require("../assets/folder.svg"),
-          fakultetName: "Baze podataka",
+          image: require("../assets/college.svg"),
+          fakultetName: "Fakultet Informatike u Puli",
+          uni: "Sveučilište Jurja Dobrile u Puli",
+        },
+        {
+          image: require("../assets/college.svg"),
+          fakultetName: "Fakultet Informatike u Puli",
+          uni: "Sveučilište Jurja Dobrile u Puli",
         },
       ],
     };

@@ -57,6 +57,7 @@ export default {
 </script>
 
 <style>
+
 .logo {
   padding: 1%;
   padding-left: 40px;
@@ -92,5 +93,11 @@ export default {
 
 .sidebar__row {
   padding-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .sidebar {
+    width: 20%;
+  }
 }
 </style>

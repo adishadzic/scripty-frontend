@@ -44,7 +44,7 @@ export default {
 .header__input {
   display: flex;
   align-items: center;
-  width: 25%;
+  width: 35%;
 }
 .header__input input {
   width: 100%;
@@ -57,8 +57,7 @@ export default {
 }
 .header__input button {
   float: left;
-  width: 20%;
-  margin-left: -10px;
+  width: 25%;
   padding: 8px;
   background: #f95555;
   color: white;
@@ -66,6 +65,7 @@ export default {
   border: 0;
   cursor: pointer;
   border-radius: 5px;
+  margin-left: 10px;
 }
 
 .header__input button:hover {
