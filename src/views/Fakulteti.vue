@@ -1,6 +1,6 @@
 <template>
   <div class="fakulteti">
-    <h1>Fakulteti</h1>
+    <h1>Fakultetiiiiiiii</h1>
     <div class="mape__fakulteta">
       <p>Mape</p>
       <button>
