@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import Saved from '../views/Saved.vue';
 import Chat from '../views/Chat.vue';
+import Fakulteti from '../views/Fakulteti.vue';
 
 Vue.use(VueRouter);
 
@@ -22,6 +23,11 @@ const routes = [
     name: 'Chat',
     component: Chat,
   },
+  {
+    path: '/fakulteti',
+    name: 'fakulteti',
+    component: Fakulteti,
+  }
 ];
 
 const router = new VueRouter({

@@ -28,8 +28,8 @@ let sidebarData = [];
 sidebarData = [
   {
     img: require("../assets/home.svg"),
-    title: "Home",
-    route: "/home",
+    title: "Fakulteti",
+    route: "/fakulteti",
   },
   {
     img: require("../assets/bookmark.svg"),
