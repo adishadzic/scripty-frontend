@@ -1,8 +1,8 @@
 <template>
-  <div class="saved_item">
+  <div class="fakultet_item">
     <button>
-      <img :src="fakultet.img" height="30" class="btn-image" />
-      <p>{{ fakultet.fakultetName }}</p>
+      <img :src="data.image" height="30" class="btn-image" />
+      <p>{{ data.fakultetName }}</p>
     </button>
   </div>
 </template>
@@ -10,12 +10,12 @@
 <script>
 export default {
   name: "MapaFakulteta",
-  props: ["fakultet"],
+  props: ["data"],
 };
 </script>
 
 <style>
-.saved_item button {
+.fakultet_item button {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   padding: 15px;

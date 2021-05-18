@@ -1,14 +1,18 @@
 <template>
-  <div class="saved">
+  <div class="fakulteti">
     <h1>Fakulteti</h1>
-    <div class="mape">
+    <div class="mape__fakulteta">
       <p>Mape</p>
       <button>
         <img src="../assets/newFolder.svg" height="25" />New folder
       </button>
     </div>
-    <div class="saved__items">
-      <MapaFakulteta :key="fakultet.id" v-for="fakultet in fakulteti" :item="fakultet" />
+    <div class="fakultet__items">
+      <MapaFakulteta
+        :key="fakultet.url"
+        v-for="fakultet in fakulteti"
+        :data="fakultet"
+      />
     </div>
   </div>
 </template>
@@ -24,23 +28,23 @@ export default {
     return {
       fakulteti: [
         {
-          img: require("../assets/folder.svg"),
+          image: require("../assets/folder.svg"),
           fakultetName: "Statistika",
         },
         {
-          img: require("../assets/folder.svg"),
+          image: require("../assets/folder.svg"),
           fakultetName: "Osnove IKT-a..",
         },
         {
-          img: require("../assets/folder.svg"),
+          image: require("../assets/folder.svg"),
           fakultetName: "Web Aplikacije",
         },
         {
-          img: require("../assets/folder.svg"),
+          image: require("../assets/folder.svg"),
           fakultetName: "Ekonomija",
         },
         {
-          img: require("../assets/folder.svg"),
+          image: require("../assets/folder.svg"),
           fakultetName: "Baze podataka",
         },
       ],
@@ -50,19 +54,19 @@ export default {
 </script>
 
 <style>
-.saved {
+.fakulteti {
   font-family: "Open Sans", sans-serif;
   padding-top: 30px;
   margin-left: 17%;
   margin-right: 40px;
 }
-.mape {
+.mape__fakulteta {
   margin-top: 20px;
   display: flex;
   align-items: center;
 }
 
-.mape button {
+.mape__fakulteta button {
   padding: 10px;
   margin-left: 20px;
   background-color: #f95555;
@@ -78,7 +82,7 @@ export default {
   margin-right: 5px;
 }
 
-.saved__items {
+.fakultet__items {
   display: flex;
   padding-top: 20px;
   flex-wrap: wrap;
