@@ -5,9 +5,5 @@
 </template>
 
 <style>
-.home {
-  font-family: "Open Sans", sans-serif;
-  padding-top: 30px;
-  margin-left: 17%;
-}
+@import "../assets/css/Home.css";
 </style>

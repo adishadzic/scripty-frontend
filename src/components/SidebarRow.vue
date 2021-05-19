@@ -15,30 +15,5 @@ export default {
 </script>
 
 <style>
-.sidebarRow {
-  padding: 20px 10px 20px 20px;
-  display: flex;
-  align-items: center;
-  padding-left: 40px;
-}
-.sidebarRow a {
-  text-decoration: none;
-}
-.sidebarRow__title {
-  padding-left: 15px;
-  font-weight: 400;
-  font-size: 14px;
-  color: black;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-}
-
-.sidebarRow:hover {
-  border-left: 10px solid #8a0000;
-  background: lightcoral;
-}
-
-.sidebarRow:hover > .sidebarRow__title {
-  font-weight: bold;
-}
+@import "../assets/css/SidebarRow.css";
 </style>

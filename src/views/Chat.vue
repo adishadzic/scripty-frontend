@@ -5,9 +5,5 @@
 </template>
 
 <style>
-.chat {
-  font-family: "Open Sans", sans-serif;
-  padding-top: 30px;
-  margin-left: 17%;
-}
+@import "../assets/css/Chat.css";
 </style>

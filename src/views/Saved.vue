@@ -82,37 +82,5 @@ export default {
 </script>
 
 <style>
-.saved {
-  font-family: "Open Sans", sans-serif;
-  padding-top: 30px;
-  margin-left: 17%;
-  margin-right: 40px;
-}
-.mape {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-}
-
-.mape button {
-  padding: 10px;
-  margin-left: 20px;
-  background-color: #f95555;
-  border: 0;
-  color: white;
-  display: flex;
-  align-items: center;
-  border-radius: 5px;
-  font-family: "Open Sans", sans-serif;
-}
-
-.mape button img {
-  margin-right: 5px;
-}
-
-.saved__items {
-  display: flex;
-  padding-top: 20px;
-  flex-wrap: wrap;
-}
+@import "../assets/css/Saved.css";
 </style>

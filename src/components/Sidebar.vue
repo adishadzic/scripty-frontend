@@ -1,9 +1,9 @@
 <template>
   <div class="sidebar">
     <div class="logo">
-      <img class="menu__icon" src="../assets/burger-menu.svg" />
+      <img class="menu__icon" src="../assets/sidebar-icons/burger-menu.svg" />
       <img
-        src="../assets/logo.svg"
+        src="../assets//sidebar-icons/logo.svg"
         height="35vh"
         style="margin-right: 10px"
       />Scripty
@@ -27,17 +27,17 @@ let sidebarData = [];
 
 sidebarData = [
   {
-    img: require("../assets/home.svg"),
+    img: require("../assets/sidebar-icons/home.svg"),
     title: "Fakulteti",
     route: "/fakulteti",
   },
   {
-    img: require("../assets/bookmark.svg"),
+    img: require("../assets/sidebar-icons/bookmark.svg"),
     title: "Saved",
     route: "/saved",
   },
   {
-    img: require("../assets/chat.svg"),
+    img: require("../assets/sidebar-icons/chat.svg"),
     title: "Chat",
     route: "/chat",
   },
@@ -56,48 +56,6 @@ export default {
 };
 </script>
 
-<style>
-
-.logo {
-  padding: 1%;
-  padding-left: 40px;
-  display: flex;
-  align-items: center;
-  font-size: 23px;
-  font-family: "Roboto Mono", sans-serif;
-  font-weight: 600;
-  color: #f95555;
-}
-
-.menu__icon {
-  margin-right: 20px;
-  cursor: pointer;
-}
-.sidebar {
-  background-color: #f2f2f2;
-  height: 100%;
-  top: 0;
-  width: 15%;
-  position: fixed;
-  padding-top: 20px;
-  overflow-x: hidden;
-}
-
-.sidebar hr {
-  height: 1px;
-  border: 0;
-  background-color: gray;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.sidebar__row {
-  padding-top: 20px;
-}
-
-@media screen and (max-width: 800px) {
-  .sidebar {
-    width: 20%;
-  }
-}
+<style scoped>
+@import "../assets/css/Sidebar.css";
 </style>

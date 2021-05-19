@@ -1,16 +1,17 @@
-.fakulteti {
+.saved {
   font-family: 'Open Sans', sans-serif;
   padding-top: 30px;
-  margin-left: 17%;
+  margin-left: 300px;
   margin-right: 40px;
 }
-.mape__fakulteta {
+
+.mape {
   margin-top: 20px;
   display: flex;
   align-items: center;
 }
 
-.mape__fakulteta button {
+.mape button {
   padding: 10px;
   margin-left: 20px;
   background-color: #f95555;
@@ -26,7 +27,7 @@
   margin-right: 5px;
 }
 
-.fakultet__items {
+.saved__items {
   display: flex;
   padding-top: 20px;
   flex-wrap: wrap;

@@ -1,6 +1,6 @@
 <template>
   <div class="fakulteti">
-    <h1>Fakultetiiiiiiii</h1>
+    <h1>Fakulteti</h1>
     <div class="mape__fakulteta">
       <p>Mape</p>
       <button>
@@ -63,6 +63,6 @@ export default {
 };
 </script>
 
-<style>
-@import "../css/Fakulteti.css";
+<style scoped>
+@import "../assets/css/Fakulteti.css";
 </style>
