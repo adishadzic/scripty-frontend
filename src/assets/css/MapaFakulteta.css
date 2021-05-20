@@ -17,3 +17,19 @@
 .fakultet_item p {
   font-size: 15px;
 }
+
+/* Za medium ekrane */
+@media screen and (max-width: 1098px) {
+  .fakultet_item button {
+    width: 80%;
+    font-size: 15px;
+  }
+  
+}
+@media screen and (max-width: 1039px) {
+  .fakultet_item button {
+    width: 80%;
+    font-size: 14px;
+  }
+  
+}

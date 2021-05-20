@@ -34,3 +34,13 @@
 .sidebar__row {
   padding-top: 20px;
 }
+
+/*Mobilna veličina ekrana
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    height: 50px;
+    width: 100%;
+  }
+}
+*/
