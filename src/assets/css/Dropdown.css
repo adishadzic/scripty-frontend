@@ -1,0 +1,40 @@
+.sub-menu {
+  text-align: center;
+  width: 120px;
+  position: absolute;
+  background-color: lightgray;
+  top: calc(100% + 5px);
+  transform: translateX(-90%);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.sub-menu .menu-item {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-item a {
+  color: #000;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.sub-menu .menu-item:hover {
+  background-color: rgba(161, 160, 160, 0.9);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.4s ease-out;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}

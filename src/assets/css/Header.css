@@ -8,6 +8,7 @@
   padding-right: 20px;
   padding-top: 25px;
   margin-left: 300px;
+  position: relative;
 }
 
 .header__input {
@@ -67,6 +68,6 @@
 }
 
 .header__icon-last {
-  margin-left: 6px;
-  height: 7px;
+  height: 9px;
+  margin-left: 5px;
 }

@@ -1,7 +1,12 @@
 <template>
   <div class="sidebar">
     <div class="logo">
-      <img class="menu__icon" src="../assets/sidebar-icons/burger-menu.svg" />
+      <router-link to="/">
+        <img
+          class="menu__icon"
+          src="../assets/sidebar-icons/burger-menu.svg"
+          style="margin-top: 8px"
+      /></router-link>
       <img
         src="../assets//sidebar-icons/logo.svg"
         height="35vh"
