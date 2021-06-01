@@ -1,8 +1,7 @@
 <template>
-<div class="myProfile">
-    <p>test</p>
-    <h1></h1>
-</div>
+  <div class="my__profile">
+    <h1>This is my profile</h1>
+  </div>
 </template>
 
 <script>
@@ -10,3 +9,7 @@ export default {
   name: "MyProfile",
 };
 </script>
+
+<style>
+@import "../assets/css/MyProfile.css";
+</style>
