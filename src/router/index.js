@@ -4,6 +4,7 @@ import Home from '../views/Home.vue';
 import Saved from '../views/Saved.vue';
 import Chat from '../views/Chat.vue';
 import Fakulteti from '../views/Fakulteti.vue';
+import myProfile from '../views/myProfile.vue';
 
 Vue.use(VueRouter);
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/fakulteti',
     name: 'fakulteti',
     component: Fakulteti,
+  },
+  {
+    path: '/myProfile',
+    name: 'myProfile',
+    component: myProfile,
   }
 ];
 
