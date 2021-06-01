@@ -46,6 +46,11 @@ sidebarData = [
     title: "Chat",
     route: "/chat",
   },
+  {
+    img: require("../assets/sidebar-icons/home.svg"),
+    title: "My profile",
+    route: "/myProfile",
+  },
 ];
 
 export default {
