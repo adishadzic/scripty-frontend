@@ -6,7 +6,9 @@
     </div>
 
     <div class="header__icons">
-      <img class="header__icon" src="../assets/header-icons/plus-icon.svg" />
+        <img class="header__icon"
+        src="../assets/header-icons/plus-icon.svg"
+      />
 
       <img
         class="header__icon"
@@ -14,7 +16,9 @@
         style="height: 33px; margin-right: 2px"
       />
       <!-- <span class="badge">3</span> -->
-      <img class="header__icon" src="../assets/header-icons/avatar-icon.svg" />
+        <img class="header__icon"
+        src="../assets/header-icons/avatar-icon.svg"
+      />
       <Dropdown :items="options" />
     </div>
   </div>
@@ -30,7 +34,7 @@ export default {
       options: [
         {
           title: "My profile",
-          link: "#",
+          link: "/myProfile",
         },
         {
           title: "Settings",
