@@ -1,0 +1,47 @@
+.login {
+  font-family: Verdana, Geneva, sans-serif;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 25px;
+  margin: 8% auto 0;
+}
+
+.login h2 {
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding: 20px;
+}
+
+.field {
+  margin: 10px;
+}
+
+.field input {
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border: 0;
+  color: black;
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: large;
+}
+
+.btn-login {
+  text-align: center;
+}
+
+.btn-login button {
+  padding: 15px;
+  background: #f95555;
+  color: white;
+  font-size: large;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}

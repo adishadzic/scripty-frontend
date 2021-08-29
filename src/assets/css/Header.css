@@ -39,7 +39,7 @@
 }
 
 .header__input button:hover {
-  color: black;
+  background-color: #a15f5f;
 }
 
 .header__icons {

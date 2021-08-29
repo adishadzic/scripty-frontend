@@ -8,7 +8,7 @@
           style="margin-top: 8px"
       /></router-link>
       <img
-        src="../assets//sidebar-icons/logo.svg"
+        src="../assets/sidebar-icons/logo.svg"
         height="35vh"
         style="margin-right: 10px"
       />Scripty

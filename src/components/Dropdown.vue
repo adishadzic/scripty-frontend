@@ -11,8 +11,11 @@
 
     <transition name="fade" appear>
       <div class="sub-menu" v-if="isOpen">
-        <div v-for="(item, i) in items" :key="i" class="menu-item">
-          <a :href="item.link">{{ item.title }}</a>
+        <div class="menu-item">
+          <a href="#">My profile</a>
+        </div>
+        <div class="menu-item">
+          <a @click="logout">Logout</a>
         </div>
       </div>
     </transition>
@@ -21,6 +24,7 @@
 
 <script>
 import { mixin as clickaway } from "vue-clickaway";
+import { Auth } from "@/services";
 export default {
   name: "dropdown",
   props: ["items"],
@@ -33,6 +37,10 @@ export default {
   methods: {
     hideDropdown() {
       this.isOpen = false;
+    },
+    logout() {
+      Auth.logout();
+      this.$router.go();
     },
   },
 };
