@@ -39,6 +39,33 @@ let Auth = {
   getUser() {
     return JSON.parse(localStorage.getItem('User'));
   },
+  getToken() {
+    let token = Auth.getUser();
+    if (token) {
+      return token;
+    } else {
+      return false;
+    }
+  },
+  authenticated() {
+    let user = Auth.getUser();
+    if (user) {
+      return true;
+    } else {
+      return false;
+    }
+  },
+  state: {
+    get authenticated() {
+      return Auth.authenticated();
+    },
+    get userEmail() {
+      let user = Auth.getUser();
+      if (user) {
+        return user.email;
+      }
+    },
+  },
 };
 
 export { Auth };

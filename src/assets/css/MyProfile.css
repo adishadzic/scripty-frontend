@@ -5,53 +5,27 @@
   margin-right: 40px;
 }
 
-.profileCard{
-  background-color: #F2F2F2;
-  width: 300px;
+.profileCard {
+  background-color: #f2f2f2;
+  width: 600px;
   height: 400px;
   margin-top: 30px;
-  border-radius: 5px;
-  float:left;
-  
+  border-radius: 25px;
+  float: left;
 }
 
-.profileCardElements{
+.profileCardElements {
   justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.profilePicture{
+.profilePicture {
   margin-top: 30px;
-  width: 30%;
-}
-.ime{
-  width: 200px;
-  height: 30px;
-  margin-top: 15px;
-  background-color: white;
-  border-radius: 5px;
-  padding-left: 3%;
-}
-.prezime{
-  width: 200px;
-  height: 30px;
-  margin-top: 15px;
-  background-color: white;
-  border-radius: 5px;
-  padding-left: 3%;
-}
-.email{
-  width: 200px;
-  height: 30px;
-  margin-top: 15px;
-  background-color: white;
-  border-radius: 5px;
-  padding-left: 3%;
+  width: 20%;
 }
 
-.statistike{
-  background-color: #F2F2F2;
-  float:left;
+.profileCard input {
+  border: 0;
 }

@@ -12,7 +12,7 @@
     <transition name="fade" appear>
       <div class="sub-menu" v-if="isOpen">
         <div class="menu-item">
-          <a href="#">My profile</a>
+          <router-link to="/myprofile">My profile</router-link>
         </div>
         <div class="menu-item">
           <a @click="logout">Logout</a>

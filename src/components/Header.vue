@@ -15,7 +15,7 @@
         src="../assets/header-icons/bell-icon.svg"
         style="height: 33px; margin-right: 2px"
       />
-      <!-- <span class="badge">3</span> -->
+
       <img class="header__icon" src="../assets/header-icons/avatar-icon.svg" />
       <Dropdown />
     </div>
