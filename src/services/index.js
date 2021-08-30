@@ -2,7 +2,7 @@ import axios from 'axios';
 import $router from '@/router';
 
 let Service = axios.create({
-  baseURL: 'http://localhost:3000',
+  baseURL: 'https://scripty-backend.vercel.app',
   timeout: 2000,
   headers: {
     Accept: 'application/json',
