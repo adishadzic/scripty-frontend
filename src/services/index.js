@@ -3,7 +3,7 @@ import $router from '@/router';
 
 let Service = axios.create({
   baseURL: 'https://scripty-backend.herokuapp.com',
-  timeout: 2000,
+  timeout: 1000,
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json',
