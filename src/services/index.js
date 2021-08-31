@@ -2,7 +2,7 @@ import axios from 'axios';
 import $router from '@/router';
 
 let Service = axios.create({
-  baseURL: 'https://scripty-backend.herokuapp.com',
+  baseURL: 'https://scripty-backend.herokuapp.com/',
   timeout: 1000,
   headers: {
     Accept: 'application/json',

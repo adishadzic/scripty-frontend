@@ -116,7 +116,7 @@ export default {
     errorNotification() {
       Vue.$toast.open({
         message:
-          "Either you didn't fill out the entire form or the user already exists",
+          "Something went wrong",
         type: "error",
         position: "top",
         size: "xl",

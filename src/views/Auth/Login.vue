@@ -61,7 +61,7 @@ export default {
     },
     errorNotification() {
       Vue.$toast.open({
-        message: "Cannot authorize",
+        message: "Something went wrong",
         type: "error",
         position: "top",
         size: "xl",
