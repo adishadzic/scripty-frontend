@@ -21,7 +21,7 @@
         </div>
         <div class="field">
           <label>Password</label>
-          <input type="text" v-model="password" />
+          <input type="password" v-model="password" />
           <p v-if="!$v.password.required" style="color: red">
             Password is required
           </p>
@@ -31,7 +31,7 @@
         </div>
         <div class="field">
           <label>Password repeat</label>
-          <input type="text" v-model="repeatPassword" />
+          <input type="password" v-model="repeatPassword" />
           <p v-if="!$v.repeatPassword.required" style="color: red">
             Repeat the password
           </p>
