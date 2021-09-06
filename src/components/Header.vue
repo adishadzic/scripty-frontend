@@ -8,7 +8,7 @@
     </div>
 
     <div class="header__icons">
-      <img class="header__icon" src="../assets/header-icons/plus-icon.svg" />
+      <NewScriptForm />
 
       <img
         class="header__icon"
@@ -24,11 +24,13 @@
 
 <script>
 import Dropdown from "./Dropdown";
+import NewScriptForm from "./NewScriptForm.vue";
 
 export default {
   name: "Header",
   components: {
     Dropdown,
+    NewScriptForm,
   },
 };
 </script>
