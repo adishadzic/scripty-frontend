@@ -13,6 +13,11 @@
   margin-top: 15px;
 }
 
+.saved_item:hover {
+  transition: transform 0.3s;
+  transform: scale(1.1);
+}
+
 .btn-image {
   margin-right: 10px;
 }

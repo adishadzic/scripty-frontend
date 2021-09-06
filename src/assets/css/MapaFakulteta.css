@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
 .fakultet_item button {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
@@ -14,22 +13,27 @@
   border-radius: 5px;
 }
 
+.fakultet_item:hover {
+  transition: transform 0.3s;
+  transform: scale(1.1);
+}
+
 .fakultet_item p {
   font-size: 15px;
 }
 
 /* Za medium ekrane */
+
 @media screen and (max-width: 1098px) {
   .fakultet_item button {
     width: 80%;
     font-size: 15px;
   }
-  
 }
+
 @media screen and (max-width: 1039px) {
   .fakultet_item button {
     width: 80%;
     font-size: 14px;
   }
-  
 }
