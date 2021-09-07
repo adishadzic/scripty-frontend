@@ -46,6 +46,24 @@ let Posts = {
       };
     });
   },
+  addComment(comment) {
+    return Service.post('/comment', comment);
+  },
+  async getAllComments(comments) {
+    let response = await Service.get(`/comments/${comments}`);
+    let data = response.data;
+    data = data.map((doc) => {
+      return {
+        comment: doc.comment,
+        scriptId: doc.scriptId,
+        userEmail: doc.userEmail,
+      };
+    });
+    return data;
+  },
+  async deleteComment(comment) {
+    let response = await Service.delete(`/delete/:${comment}`);
+  },
 };
 
 let Auth = {
@@ -106,4 +124,4 @@ let Auth = {
   },
 };
 
-export { Auth, Posts, state };
+export { Auth, Posts, state, Service };

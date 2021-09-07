@@ -6,7 +6,11 @@
         <img src="../assets/sidebar-icons/scripts.svg" />
       </div>
     </div>
-    <div v-for="script in scripts" :key="script.id">
+    <div
+      v-for="script in scripts"
+      :key="script.id"
+      @click="gotoDetails(script)"
+    >
       <b-card-group deck>
         <ScriptCard :info="script" />
       </b-card-group>
@@ -15,7 +19,6 @@
 </template>
 
 <script>
-import _ from "lodash";
 import { Posts } from "@/services";
 import store from "@/store";
 import ScriptCard from "@/components/ScriptCard.vue";
@@ -28,9 +31,11 @@ export default {
     };
   },
   watch: {
-    "store.searchTerm": _.debounce(function (val) {
-      this.fetchPosts(val);
-    }, 500),
+    "store.searchTerm":
+      (function (val) {
+        this.fetchPosts(val);
+      },
+      500),
   },
   created() {
     this.fetchPosts();
@@ -38,11 +43,11 @@ export default {
   name: "posts",
   methods: {
     async fetchPosts(term) {
-      term = term || this.store.searchTerm;
+      term = term || store.searchTerm;
       this.scripts = await Posts.getAllScripts(term);
     },
-    gotoDetails(card) {
-      this.$router.push({ path: `post/${card.id}` });
+    gotoDetails(script) {
+      this.$router.push({ path: `script/${script.id}` });
     },
   },
   components: {
