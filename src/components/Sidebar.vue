@@ -37,6 +37,11 @@ sidebarData = [
     route: "/fakulteti",
   },
   {
+    img: require("../assets/sidebar-icons/scripts.svg"),
+    title: "Scripts",
+    route: "/scripts",
+  },
+  {
     img: require("../assets/sidebar-icons/bookmark.svg"),
     title: "Saved",
     route: "/saved",

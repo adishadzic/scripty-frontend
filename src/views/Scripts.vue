@@ -1,6 +1,11 @@
 <template>
   <div class="scripts">
-    <h3>All scripts</h3>
+    <div class="flex_row">
+      <h3>All scripts</h3>
+      <div class="script_image_background">
+        <img src="../assets/sidebar-icons/scripts.svg" />
+      </div>
+    </div>
     <div v-for="script in scripts" :key="script.id">
       <b-card-group deck>
         <ScriptCard :info="script" />
