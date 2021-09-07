@@ -7,6 +7,8 @@ import Fakulteti from '../views/Fakulteti.vue';
 import myProfile from '../views/myProfile.vue';
 import Login from '../views/Auth/Login.vue';
 import Register from '../views/Auth/Register.vue';
+import Scripts from '../views/Scripts.vue';
+import ScriptDetail from '../views/ScriptDetail.vue';
 import { Auth } from '@/services';
 
 Vue.use(VueRouter);
@@ -46,6 +48,17 @@ const routes = [
     path: '/register',
     name: 'register',
     component: Register,
+  },
+  {
+    path: '/scripts',
+    name: 'scripts',
+    component: Scripts,
+  },
+  {
+    path: '/script/:id',
+    name: 'script-detail',
+    props: true,
+    component: ScriptDetail,
   },
 ];
 

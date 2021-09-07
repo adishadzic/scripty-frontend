@@ -9,6 +9,41 @@ let Service = axios.create({
   },
 });
 
+let Posts = {
+  async uploadScript(script) {
+    return Service.post('/upload', script);
+  },
+  async getOneScript(id) {
+    let response = await Service.get(`/scripts/${id}`);
+    let doc = response.data;
+    console.log(doc);
+
+    return {
+      id: doc._id,
+      scriptName: doc.scriptName,
+      university: doc.university,
+      scriptContent: doc.scriptContent,
+    };
+  },
+  async getAllScripts(searchTerm) {
+    let options = {};
+
+    if (searchTerm) {
+      options.params = {
+        _any: searchTerm,
+      };
+    }
+    let response = await Service.get('/scripts', options);
+    return response.data.map((doc) => {
+      return {
+        id: doc._id,
+        scriptName: doc.scriptName,
+        university: doc.university,
+      };
+    });
+  },
+};
+
 let Auth = {
   async register(name, email, password) {
     let response = await Service.post('/auth/register', {
@@ -67,4 +102,4 @@ let Auth = {
   },
 };
 
-export { Auth };
+export { Auth, Posts };

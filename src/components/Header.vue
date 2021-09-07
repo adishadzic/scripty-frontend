@@ -1,14 +1,14 @@
 <template>
   <div class="header">
     <div class="header__input">
-      <input type="text" placeholder="Pretraži.." />
+      <input v-model="store.searchTerm" type="text" placeholder="Pretraži.." />
       <button type="submit">
         <i class="fa fa-search"></i>
       </button>
     </div>
 
     <div class="header__icons">
-      <img class="header__icon" src="../assets/header-icons/plus-icon.svg" />
+      <NewScriptForm />
 
       <img
         class="header__icon"
@@ -24,11 +24,19 @@
 
 <script>
 import Dropdown from "./Dropdown";
+import NewScriptForm from "./NewScriptForm.vue";
+import store from "@/store.js";
 
 export default {
   name: "Header",
+  data() {
+    return {
+      store,
+    };
+  },
   components: {
     Dropdown,
+    NewScriptForm,
   },
 };
 </script>
