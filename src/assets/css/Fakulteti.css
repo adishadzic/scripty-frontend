@@ -23,6 +23,11 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.mape__fakulteta button:hover {
+  transition: transform 0.3s;
+  transform: scale(1.1);
+}
+
 .mape__fakulteta button img {
   margin-right: 5px;
 }

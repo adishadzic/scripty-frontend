@@ -1,8 +1,12 @@
 import axios from 'axios';
 import $router from '@/router';
 
+let state = {
+  postDetail: null,
+};
+
 let Service = axios.create({
-  baseURL: `http://localhost:4000`,
+  baseURL: `https://scripty-backend.herokuapp.com/`,
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json',
@@ -102,4 +106,4 @@ let Auth = {
   },
 };
 
-export { Auth, Posts };
+export { Auth, Posts, state };
