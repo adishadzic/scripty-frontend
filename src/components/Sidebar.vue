@@ -20,8 +20,6 @@
         :sidebar="sidebarRow"
       />
     </div>
-
-    <hr />
   </div>
 </template>
 

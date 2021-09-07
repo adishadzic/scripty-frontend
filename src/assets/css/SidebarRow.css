@@ -4,9 +4,11 @@
   align-items: center;
   padding-left: 40px;
 }
+
 .sidebarRow a {
   text-decoration: none;
 }
+
 .sidebarRow__title {
   padding-left: 15px;
   font-weight: 400;
@@ -19,8 +21,10 @@
 .sidebarRow:hover {
   border-left: 10px solid #8a0000;
   background: lightcoral;
+  transition: transform 0.3s;
+  transform: scale(1.03);
 }
 
-.sidebarRow:hover > .sidebarRow__title {
+.sidebarRow:hover>.sidebarRow__title {
   font-weight: bold;
 }
