@@ -2,7 +2,6 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import Saved from '../views/Saved.vue';
-import Chat from '../views/Chat.vue';
 import Fakulteti from '../views/Fakulteti.vue';
 import myProfile from '../views/myProfile.vue';
 import Login from '../views/Auth/Login.vue';
@@ -23,11 +22,6 @@ const routes = [
     path: '/saved',
     name: 'Saved',
     component: Saved,
-  },
-  {
-    path: '/chat',
-    name: 'Chat',
-    component: Chat,
   },
   {
     path: '/fakulteti',

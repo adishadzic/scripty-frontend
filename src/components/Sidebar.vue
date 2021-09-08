@@ -44,11 +44,6 @@ sidebarData = [
     title: "Saved",
     route: "/saved",
   },
-  {
-    img: require("../assets/sidebar-icons/chat.svg"),
-    title: "Chat",
-    route: "/chat",
-  },
 ];
 
 export default {
