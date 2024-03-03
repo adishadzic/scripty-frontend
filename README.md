@@ -1,5 +1,5 @@
 # scripty-frontend
-
+Backend: https://github.com/adishadzic/scripty-backend
 ## Project setup
 ```
 npm install
